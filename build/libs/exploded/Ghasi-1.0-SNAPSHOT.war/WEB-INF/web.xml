@@ -25,16 +25,16 @@
        <servlet-name>Blog</servlet-name>
         <servlet-class>myservlets.Blog</servlet-class>
     </servlet>
-    <!--<servlet>-->
-        <!--<servlet-name>Done</servlet-name>-->
-        <!--<servlet-class>myservlets.done</servlet-class>-->
-    <!--</servlet>-->
+    <servlet>
+        <servlet-name>Done</servlet-name>
+        <servlet-class>myservlets.done</servlet-class>
+    </servlet>
 
 
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>Done</servlet-name>-->
-        <!--<url-pattern>/done</url-pattern>-->
-    <!--</servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>Done</servlet-name>
+        <url-pattern>/done</url-pattern>
+    </servlet-mapping>
 
     <servlet-mapping>
         <servlet-name>Blog</servlet-name>

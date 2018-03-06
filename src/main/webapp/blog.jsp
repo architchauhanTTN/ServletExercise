@@ -8,6 +8,7 @@
 
 <form action="/blog" method="post">
 
+    <p> </p>
     enter the BLOG <input type="text" name="blog"> <br>
 
     <input type="submit">

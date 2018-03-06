@@ -5,6 +5,6 @@
     <title>Thanks</title>
 </head>
 <body>
-        <p> Thanks for submitting your blog </p>
+        <p> Thanks for submitting your blog ${bro}</p>
 </body>
 </html>

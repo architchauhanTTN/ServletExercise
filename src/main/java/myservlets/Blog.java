@@ -25,8 +25,10 @@ public class Blog extends HttpServlet {
 
         String userName  = (String)httpSession.getAttribute("uName");
 
-        ConnectionDB.insertBlog(blogDe , userName); // inserts into the database
+        ConnectionDB.insertBlog(blogDe , userName); // inserts into the table
 
-        resp.getWriter().println("YOU BLOG HAS BEEN SAVED . THANKYOU !! ");
+        req.setAttribute("bro" , userName);
+        RequestDispatcher rd = req.getRequestDispatcher("done.jsp");
+        rd.forward(req , resp);
     }
 }

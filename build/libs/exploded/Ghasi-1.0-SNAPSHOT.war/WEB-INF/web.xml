@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+    <context-param>
+        <param-name>servletContextValue</param-name>
+        <param-value>This is servlet context value</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>myservlets.HelloServlet</servlet-class>
+        <init-param>
+            <!-- <param-name>contextConfigLocation</param-name>
+            <param-value>/WEB-INF/servlet-context.xml</param-value> -->
+            <param-name>servletConfigValue</param-name>
+            <param-value>This is servlet config value</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Form</servlet-name>
+        <servlet-class>myservlets.Form</servlet-class>
+    </servlet>
+
+    <servlet>
+       <servlet-name>Blog</servlet-name>
+        <servlet-class>myservlets.Blog</servlet-class>
+    </servlet>
+    <!--<servlet>-->
+        <!--<servlet-name>Done</servlet-name>-->
+        <!--<servlet-class>myservlets.done</servlet-class>-->
+    <!--</servlet>-->
+
+
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>Done</servlet-name>-->
+        <!--<url-pattern>/done</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <servlet-mapping>
+        <servlet-name>Blog</servlet-name>
+        <url-pattern>/blog</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Form</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
